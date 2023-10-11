@@ -37,29 +37,93 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Joshua Levi Berbegal profile pictire" />
+        <img
+          src="./assets/profile-pic.png"
+          alt="Joshua Levi Berbegal profile pictire"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Joshua Levi</h1>
+        <h1 class="title">Joshua Levi Berbegal</h1>
         <p class="section__text__p2">IT Technical Assistant</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='http://linkedIn.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="location.href='http://github.com/'"
+          />
+        </div>
       </div>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">DOWNLOAD CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">CONTACTS</button>
+    </section>
+    <section id="About">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />IT Technical Assistant</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree <br />Information Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              odio laudantium eaque, excepturi voluptates quasi blanditiis et
+              voluptas repellendus delectus magni animi dolorum ipsum saepe
+              suscipit placeat, ad dolorem repudiandae quidem quae? Optio
+              architecto ab qui asperiores, eius minus eos nulla facere adipisci
+              deleniti nihil? Iste eos dolore laboriosam voluptate?
+            </p>
+          </div>
+        </div>
       </div>
-      <div id="socials-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My linkedin profile"
-          class="icon"
-          onclick="location.href='http://linkedIn.com/'" />
-        <img
-          src="./assets/github.png"
-          alt="My github profile"
-          class="icon"
-          onclick="location.href='http://github.com/'" />
-      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <script src="script.js"></script>
   </body>
