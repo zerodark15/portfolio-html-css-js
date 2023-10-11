@@ -181,5 +181,10 @@ section {
 }
 
 .section__text__p1 {
-  font-size: 100;
+  text-align: center;
+}
+
+.section__text__p1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
