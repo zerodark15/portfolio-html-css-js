@@ -62,7 +62,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <!-- <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -93,11 +93,11 @@
         </div>
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
+    </section> -->
 
     <!-- ------------ABOUT2 ME---------------  -->
 
-    <section id="about2">
+    <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -113,33 +113,38 @@
               placeat, ad dolorem repudiandae quidem quae? Optio architecto ab qui asperiores, eius minus eos nulla
               facere adipisci deleniti nihil? Iste eos dolore laboriosam voluptate?
             </p>
-            <!-- <nav id="about-nav"> -->
-                <ul class="about-nav-links">
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#work experience">Work Experience</a></li>
-                  <li><a href="#education">Education</a></li>
-                </ul>
-              </div>
-            <!-- </nav> -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('work experience')">Work Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI?UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android/ios apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="work experience">
+              <ul>
+                <li><span>2020 - Present</span><br />IT Technical Assistant at University of San Agustin</li>
+                <li><span>2019 - 2020</span><br />Operations System Support Staff at University of San Agustin</li>
+                <li><span>2018 - 2019</span><br />On-the-Job Trainee (OJT) at University of San Agustin</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2013 - 2019</span><br />Primary at Cabatuan Central Elementary School</li>
+                <li><span>2009 - 2013</span><br />Secondary at Centerphil Montessori Learning Center, Inc.</li>
+                <li><span>2003 - 2009</span><br />BS Information Technology at University of San Agustin</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
-    <!-- 
-    <div id="about2">
-      <div class="container">
-        <div class="row">
-          <div class=".about2-col-1">
-            <img src="./assets/about-pic.png" />
-          </div>
-          <div class=".about2-col-2">
-            <h1>About Me</h1>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
+    <!-- ----------------------------------------EXPERIENCE----------------------------------- -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
