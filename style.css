@@ -1,6 +1,6 @@
 /* GENERAl */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -346,7 +346,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 55%;
+  height: 80%;
 }
 
 /* ---------------------------tab-links---------------------------- */
@@ -368,7 +368,7 @@ section {
 }
 
 .tab-links::after {
-  content: "";
+  content: '';
   width: 0;
   height: 3px;
   background: #ff004f;
@@ -487,7 +487,7 @@ article .icon {
 
 /* ----------------GALLERY SECTION---------------- */
 
-#gallery {
+/* #gallery {
   position: relative;
 }
 
@@ -508,6 +508,53 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+} */
+
+/* -----------------TEST---------------- */
+/* #gallery {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+} */
+
+/* ----------OK GALLERY----------------- */
+#gallery {
+  position: relative;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 10px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.btn-container {
+  align-items: center;
 }
 
 /*--------CONTACT PAGE--------*/
