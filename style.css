@@ -221,7 +221,7 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .btn-color-1,
@@ -558,15 +558,70 @@ article .icon {
 }
 
 /*--------CONTACT PAGE--------*/
-/* 
+
+/*#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+ .contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+} */
+
+/* ---------------JA DON------------- */
 #contact {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   height: 70vh;
 }
 
-.contact-info-upper-container {
+/* #contact
+ {
+  position: relative;
+ } */
+
+.contact-info-upper-container-left {
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-upper-container-right {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
@@ -578,6 +633,7 @@ article .icon {
 }
 
 .contact-info-container {
+  flex-basis: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,9 +641,9 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p {
+/* .contact-info-container p {
   font-size: larger;
-}
+} */
 
 .contact-icon {
   cursor: default;
@@ -595,49 +651,40 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
-} */
+}
 
-/* ---------------------NEW CONTACT SECTION---------------------- */
+.contact-info-upper-container-right form {
+  width: 100%;
+}
 
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #b4b4b4;
+  padding: 15px;
+  margin: 15px 0;
+  color: #201e1e;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn.btn-color-1 {
+  padding: 10px 10px;
+  font-size: 15px;
+  margin-top: 2px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+/* ----------------FINAL NAGID NI-------------------- */
 /* #contact {
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-} */
-
-/* ------------------- */
 
 .contact-left {
   flex-basis: 35%;
@@ -650,7 +697,7 @@ article .icon {
   margin-top: 30px;
 }
 
-.contact-left p {
+.contact-left p i {
   color: #ff004f;
   margin-right: 15px;
   font-size: 25px;
@@ -666,7 +713,7 @@ article .icon {
   margin-right: 15px;
   color: #ababab;
   display: inline-block;
-}
+} */
 
 /* FOOTER SECTION */
 
