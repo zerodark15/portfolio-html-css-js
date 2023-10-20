@@ -467,7 +467,7 @@ a:hover {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -553,9 +553,9 @@ article .icon {
   border-radius: 1rem;
 }
 
-/* .btn-container {
+.btn-container {
   align-items: center;
-} */
+}
 
 /*--------CONTACT PAGE--------*/
 
@@ -764,4 +764,10 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+#msg {
+  color: #b54769;
+  margin-top: 10px;
+  display: block;
 }

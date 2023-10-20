@@ -20,12 +20,19 @@ function opentab(tabname) {
 }
 
 const scriptURL =
-  '<https://script.google.com/macros/s/AKfycbxcfQgp_tANfAPNRYRncomB1OWJqYpSSmtHxJbGJBTZYQN3dnwmmchwe__RdHnTtnik/exec>';
-const form = document.forms['submit-to-google-sheet'];
+  'https://script.google.com/macros/s/AKfycbyfy6EjcMk_f_5ATZcyGfJ9WjRIcm69Ya5LXf8PA_9_YhEqOQeB5G4a-XusX9JyI28/exec';
+const form = document.forms['contact-form'];
+const msg = document.getElementById('msg');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
   fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+      msg.innerHTML = 'Message sent successfully';
+      setTimeout(function () {
+        msg.innerHTML = '';
+      }, 5000);
+      form.reset();
+    })
     .catch(error => console.error('Error!', error.message));
 });
