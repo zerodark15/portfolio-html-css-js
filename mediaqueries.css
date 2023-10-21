@@ -10,6 +10,12 @@
   #projects {
     height: fit-content;
   }
+  /* .gallery-container {
+    grid-template-columns: 1fr;
+  } */
+  .gallery-box .portfolio-layer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,6 +51,9 @@
   .about-containers {
     margin-top: 0;
   }
+  .gallery-box .portfolio-layer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -59,6 +68,15 @@
   article {
     font-size: 1rem;
   }
+
+  /* .gallery-container {
+    padding-bottom: 7rem;
+  } */
+
+  #socials-container {
+    margin-top: 2rem;
+  }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
@@ -101,4 +119,25 @@
   .text-container {
     text-align: justify;
   }
+
+  .contact-info-container-right {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .btn.contact-btn {
+    margin-left: 4.5rem;
+  }
+
+  .gallery-container {
+    grid-template-columns: 0.5fr;
+    width: auto;
+    justify-content: center;
+  }
+  .gallery-box .portfolio-layer {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
 }
