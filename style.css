@@ -1,6 +1,6 @@
 /* GENERAl */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -177,6 +177,11 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  transition: 0.5s ease;
+}
+
+.section__pic-container:hover {
+  transform: scale(1.1);
 }
 
 .section__text {
@@ -214,6 +219,11 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  transition: 0.5s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 /* BUTTONNS */
@@ -303,7 +313,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 60%;
 }
 
 /* ---------------------------tab-links---------------------------- */
@@ -322,10 +332,15 @@ section {
   position: relative;
   display: flex;
   color: black;
+  transition: 0.5s ease;
+}
+
+.tab-links:hover {
+  transform: scale(1.1);
 }
 
 .tab-links::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #ff004f;
@@ -616,12 +631,13 @@ form textarea {
   width: 100%;
   border: 0;
   outline: none;
-  background: #b4b4b4;
+  background: #b5b5b5;
   padding: 15px;
   margin: 15px 0;
-  color: #201e1e;
+  color: #4b4949;
   font-size: 18px;
   border-radius: 6px;
+  box-shadow: 0 0 1rem var(--bg-color);
 }
 
 /* FOOTER SECTION */
