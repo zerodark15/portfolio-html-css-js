@@ -122,7 +122,8 @@
 
   .contact-info-container-right {
     margin-top: 2rem;
-    margin-left: 3rem;
+    width: 75%;
+    align-items: center;
   }
 
   .btn.contact-btn {
@@ -137,6 +138,10 @@
   .gallery-box .portfolio-layer {
     display: block;
   }
+
+  /* .btn.btn-color2.contact-btn {
+    align-items: center;
+  } */
 }
 
 @media screen and (max-width: 320px) {

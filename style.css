@@ -1,6 +1,6 @@
 /* GENERAl */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -46,6 +46,11 @@ nav {
   align-items: center;
   height: 17vh;
 }
+
+/* transition: 0.5s ease;
+.nav-links:hover {
+  transform: scale(1.1);
+} */
 
 .nav-links {
   gap: 2rem;
@@ -313,7 +318,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 60%;
+  height: 80%;
 }
 
 /* ---------------------------tab-links---------------------------- */
@@ -340,7 +345,7 @@ section {
 }
 
 .tab-links::after {
-  content: "";
+  content: '';
   width: 0;
   height: 3px;
   background: #ff004f;
@@ -393,7 +398,7 @@ section {
 
 .article-container {
   display: flex;
-  text-align: center;
+  text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -550,7 +555,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  height: 70vh;
+  height: 73vh;
 }
 
 .sub-title {
@@ -582,7 +587,7 @@ article .icon {
 }
 
 .contact-info-container-left {
-  flex-basis: 35%;
+  flex-basis: 50%;
   display: row;
   align-items: center;
   justify-content: center;
@@ -591,12 +596,12 @@ article .icon {
 }
 
 .contact-info-container-right {
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 5rem;
+  margin: 2rem;
 }
 
 .contact-info-container-left p {
@@ -633,7 +638,7 @@ form textarea {
   outline: none;
   background: #b5b5b5;
   padding: 15px;
-  margin: 15px 0;
+  margin: 10px 0;
   color: #4b4949;
   font-size: 18px;
   border-radius: 6px;
