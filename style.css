@@ -471,13 +471,13 @@ article .icon {
   transform: scale(1.1);
 }
 
-.gallery-box .portfolio-layer {
+.gallery-box .gallery-layer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--third-bg-color));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--second-bg-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,22 +488,22 @@ article .icon {
   transition: 0.5s ease;
 }
 
-.gallery-box:hover .portfolio-layer {
+.gallery-box:hover .gallery-layer {
   transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.gallery-layer h4 {
   font-size: 2rem;
   color: var(--text-color);
 }
 
-.portfolio-layer p {
+.gallery-layer p {
   font-size: 1.3rem;
   margin: 1rem;
   color: var(--text-color);
 }
 
-.portfolio-layer a {
+.gallery-layer a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -513,7 +513,7 @@ article .icon {
   border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.gallery-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
 }
