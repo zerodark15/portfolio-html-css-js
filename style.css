@@ -668,6 +668,12 @@ form input:hover {
   transform: scale(1.1);
 }
 
+.btn-container3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -682,5 +688,6 @@ footer p {
 #msg {
   color: #b54769;
   margin-top: 10px;
-  display: block;
+  display: flex;
+  justify-content: center;
 }

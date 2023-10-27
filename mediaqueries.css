@@ -86,6 +86,12 @@
   .gallery-layer p {
     font-size: 1rem;
   }
+  .btn-container3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -156,10 +162,6 @@
     margin-top: 2rem;
     width: 75%;
     align-items: center;
-  }
-
-  .btn.contact-btn {
-    margin-left: 4.5rem;
   }
 
   .gallery-container {
