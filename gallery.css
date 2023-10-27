@@ -8,23 +8,129 @@
   --main-color: #0ef;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'reboto', sans-serif;
+#gallery {
+  position: relative;
+}
+
+body {
+  padding: 50px;
 }
 
 .section__text__p1 {
   text-align: center;
   margin-top: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  margin-top: 0.5rem;
 }
+
 .gallery-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}
+
+/* img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.box {
+  padding: 10px;
+} */
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-section .box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--second-bg-color));
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: flex;
+  text-align: center;
+  /* padding: 0 4rem; */
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.box:hover .caption {
+  transform: translateY(0);
+}
+
+/* .caption h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+} */
+
+.caption p {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--text-color);
+}
+
+/* .gallery-section .box .caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-section .box .caption:hover {
+  opacity: 1;
+}
+
+.gallery-section .box .caption h3 {
+  font-size: 30px;
+}
+.gallery-section .box .caption p {
+  font-size: 20px;
+} */
+
+/* .gallery-section {
   width: 100%;
 }
 
@@ -86,4 +192,4 @@
 
 .gallery-section .gallery-wrap .gallery-images .gallery .caption p {
   font-size: 20px;
-}
+} */

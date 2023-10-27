@@ -518,6 +518,20 @@ article .icon {
   color: var(--second-bg-color);
 }
 
+.btn-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn2 {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 1rem;
+}
+
 /* .gallery-icon {
   cursor: pointer;
   position: relative;
