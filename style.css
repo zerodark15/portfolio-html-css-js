@@ -493,6 +493,11 @@ article .icon {
   transform: translateY(0);
 }
 
+.gallery-box .gallery-layer:hover {
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
 .gallery-layer h4 {
   font-size: 2rem;
   color: var(--text-color);

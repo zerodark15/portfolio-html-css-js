@@ -90,6 +90,11 @@ body {
   transform: translateY(0);
 }
 
+.box .caption:hover {
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
 /* .caption h3 {
   font-size: 2rem;
   color: var(--text-color);
