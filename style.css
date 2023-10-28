@@ -325,7 +325,7 @@ section {
 
 .tab-titles {
   display: flex;
-  margin: 10px 0 30px;
+  margin: 10px 0 20px;
 }
 
 .tab-links {
@@ -403,12 +403,13 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  align-items: center;
 }
 
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: normal;
   gap: 0.5rem;
 }
 
