@@ -217,6 +217,34 @@
     font-size: 0.5rem;
   }
 
+  .gallery-box .gallery-layer {
+    transform: translateY(100%);
+    transition: 0.5s ease;
+  }
+
+  .gallery-box:hover .gallery-layer {
+    transform: translateY(0);
+  }
+
+  .gallery-box .gallery-layer:hover {
+    transform: translateY(100%);
+    transition: 0.5s ease;
+  }
+
+  .box .caption {
+    transform: translateY(100%);
+    transition: 0.5s ease;
+  }
+
+  .box:hover .caption {
+    transform: translateY(0);
+  }
+
+  .box .caption:hover {
+    transform: translateY(100%);
+    transition: 0.5s ease;
+  }
+
   /* gallery.html */
 
   /* #body {
