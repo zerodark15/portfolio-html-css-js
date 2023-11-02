@@ -10,9 +10,13 @@
   #projects {
     height: fit-content;
   }
-  /* .gallery-container {
-    grid-template-columns: 1fr;
-  } */
+
+  /* -------------------------Gallery------------------- */
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .gallery-box .gallery-layer {
     display: block;
   }
@@ -134,10 +138,6 @@
   article {
     font-size: 1rem;
   }
-
-  /* .gallery-container {
-    padding-bottom: 7rem;
-  } */
 
   #socials-container {
     margin-top: 2rem;
